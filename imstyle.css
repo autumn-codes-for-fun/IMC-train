@@ -1,0 +1,21 @@
+section {
+  border: 2px black solid;
+  border-radius: 50px;
+  padding: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+div {
+  padding: 10px;
+}
+
+.résultat{
+  width: 200px;
+  border: 2px black solid;
+  border-radius: 50px;
+
+}

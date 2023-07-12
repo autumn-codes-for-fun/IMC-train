@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<section>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculer votre imc</title>
+    <link rel="stylesheet" href="imstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1> Calculer votre IMC -indice de masse corporelle </h1>
+  </head>
+
+  <body>
+  <form class="" action="index.html" method="post">
+    <div>
+      <label for="votre_taille">taille</label>
+      <input type="text" id="votre_taille"name="votre_taille" >
+    </div>
+    <div>
+      <label for="votre_poids">Poids</label>
+      <input type="text" id="votre_poids"name="votre_poids" >
+    </div>
+    <button type="button" onclick="calculate()">Calculer</button>
+
+<p>Votre IMC: <span id="imc_result"></span></p>
+
+  </form>
+
+    </form>
+    <!-- ici ajouter le formulaire-->
+    <p>
+      entre 25,0 et 29,9 kg/m², il existe un surpoids ; <br>
+entre 30,0 et 34,9 kg/m², il s’agit d’obésité modérée ;<br>
+entre 35,0 et 39,9 kg/m², il s’agit d’une obésité sévère ;<br>
+plus de 40 kg/m², on parle d’obésité massive.
+    </p>
+      <script src="imc.js" defer></script>
+  </body>
+
+</section>
