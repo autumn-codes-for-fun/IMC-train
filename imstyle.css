@@ -19,3 +19,7 @@ div {
   border-radius: 50px;
 
 }
+
+form, p{
+  color: red;
+}
