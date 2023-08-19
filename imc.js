@@ -1,13 +1,13 @@
 
-var slider = document.getElementById("votre_poids");
-var output = document.getElementById("svalue");
-output.innerHTML = slider.value;
+var slider = document.getElementById("votre_poids");  //permet de prendre la variable du poids sur le slider
+var output = document.getElementById("svalue");//pour afficher le poids au dessus de la barre
+output.innerHTML = slider.value; // permet d'afficher la valeur au dessus du slider
 
 slider.oninput = function() {
   output.innerHTML = this.value;
-}
+}// permet d'actualiser la valeur au dessus de la barre
 
-function calculate() {
+function calculate() {// fonction qui calcule l'IMC
   var poids = parseFloat(document.getElementById("votre_poids").value);
   var taille = parseFloat(document.getElementById("votre_taille").value);
 
@@ -20,7 +20,7 @@ function calculate() {
   Showtext(imc);
 }
 
-function Showtext(valimc){
+function Showtext(valimc){// cette fonction est un suite de condition qui permet d'afficher le bon texte selonle calcule de l'IMC
   if(valimc<18){
     document.getElementById("imc_info").textContent = "inférieur à 18,5 en sous poids";
   }
