@@ -15,13 +15,16 @@
       <label for="votre_taille">taille</label>
       <input type="text" id="votre_taille"name="votre_taille" >
     </div>
-    <div class="slidervalue">
-      <span id=svalue>0</span>
-    </div>
+
     <div>
       <label for="votre_poids">Poids</label>
-        <input type="range" min="1" max="630" value="50" class="slider" id="votre_poids">
-    <!--  <input type="text" id="votre_poids"name="votre_poids" >  -->
+        <div class="range-wrap">
+          <div class="slidervalue">
+            <span id=svalue>0</span>
+          </div>
+          <input type="range" class="slider" min="1" max="630" value="50" id="votre_poids">
+
+        </div>
     </div>
     <button type="button" onclick="calculate()">Calculer</button>
 

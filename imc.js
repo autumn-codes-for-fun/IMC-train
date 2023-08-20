@@ -1,11 +1,26 @@
 
-var slider = document.getElementById("votre_poids");
-var output = document.getElementById("svalue");
-output.innerHTML = slider.value;
+const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".slider");
+  const bubble = wrap.querySelector(".slidervalue");
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+  range.addEventListener("input", () => {  /* permet d'appeler la fonction setbubbe à chaque fois qu'on bouge le curseur*/
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 630;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val;
+
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
 }
+//ajout au dessu
 
 function calculate() {
   var poids = parseFloat(document.getElementById("votre_poids").value);

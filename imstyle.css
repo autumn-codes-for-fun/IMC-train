@@ -46,8 +46,21 @@ h1{
   font-size: 50px;
   margin-left: 300px;
 }
-.slidervalue {
-  margin: auto;
+.titrepartieun{
+  font-family: 'calligraffitiregular';
+}
+.range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+
+}
+
+.slidervalue{
+  padding: 60px 0px 0px 20px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
