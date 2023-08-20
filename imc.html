@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<section>
+
   <head>
     <meta charset="utf-8">
     <title>Calculer votre imc</title>
     <link rel="stylesheet" href="imstyle.css"  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1> Calculer votre IMC -indice de masse corporelle </h1>
+<h1> <div class="titrepartieun">
+  Calculer </div>Calculer votre IMC  </h1>
   </head>
 
   <body>
@@ -26,7 +27,12 @@
 
         </div>
     </div>
-    <button type="button" onclick="calculate()">Calculer</button>
+    <button  type="button" onclick="calculate()" class="boutton">
+
+              Calculer
+
+
+      </button>
 
 <p>Votre IMC: <span id="imc_result"></span></p>
 
@@ -46,5 +52,3 @@ plus de 40 kg/m², on parle d’obésité massive.
 </p>-->
       <script src="imc.js" defer></script>
   </body>
-
-</section>
