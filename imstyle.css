@@ -23,21 +23,23 @@
     font-style: normal;
   }
 
-  
+
 body{
     background: linear-gradient(to right,#ee9ca7, #ffdde1);
     font-family: 'calligraffitiregular';
     border: none;
 }
 
-
+/* concernant le formulaire */
 form{
   display: flex;
   flex-direction: column;
   margin-left: 200px;
   margin-right: 200px;
 
+
 }
+
 
 h1{
   width: 50%;
@@ -109,4 +111,14 @@ h1{
 button:hover{
   background: linear-gradient(90deg,transparent,white);
   transition: 0,5s,
+}
+
+
+#votre_taille:not(:focus):invalid {
+  background: red ;
+  border: 2px solid #b20a37;
+  color: #fff;
+  transition: background-color 500ms;
+    /*ajouter effet fondu+ effet shaken enlever le rouge quand le formulaire est vide et donc invalide pour cela il faudra une partie en Js pour la validation*/
+}
 }

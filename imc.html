@@ -13,8 +13,9 @@
   <body>
   <form class="" action="index.html" method="post">
     <div>
-      <label for="votre_taille">taille</label>
-      <input type="text" id="votre_taille"name="votre_taille" >
+      <label  for="votre_taille">taille</label>
+      <input type="text" id="votre_taille"name="votre_taille" required pattern ="[0-9][0-9][0-9]|[0-9][0-9]"> <!-- ceci est une expression régulière
+      il est possible de rentrer 2 ou 3 nombre pour rentrer sa taille en cm pour calculer imc , c'est un critère de validation du formulaire -->
     </div>
 
     <div>
